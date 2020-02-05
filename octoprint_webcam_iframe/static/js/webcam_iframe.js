@@ -12,7 +12,7 @@ $(function() {
 
 		self.onAllBound = function(allViewModels){
 			var webcamurl = self.settingsViewModel.webcam_streamUrl();
-			$('#webcam_container').replaceWith('<iframe id="webcam_container" src="' + webcamurl + '" width="588" height="330" style="border: none;"></iframe>');
+			$('#webcam_container').replaceWith('<iframe id="webcam_container" src="' + webcamurl + '" width="588" height="330" style="border: none;" type="application/x-mpegURL"></iframe>');
 		}
 	}
 
